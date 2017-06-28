@@ -251,7 +251,7 @@ header {
     font-family: 'Shadows Into Light Two', sans-serif;
     padding-left: 30px; }
 
-    /*font-variant: small-caps;*/
+/*font-variant: small-caps;*/
 
 .masthead-nav > li {
     display: inline-block; }
@@ -311,8 +311,3 @@ header {
 .tabStrip ul li:hover {
     border: none;
     background: #00BCD4;}
-
-
-
-
-
