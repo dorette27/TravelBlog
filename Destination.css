@@ -1,13 +1,10 @@
-@import "http://wyrd.hood.edu/~echang/it280/extras/reset.css";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-
 
 /*General*/
 body {
     padding-top: 0px;
     padding-bottom: 0px;
-    font-family: 'PTSansRegular',Arial, Helvetica, sans-serif;  }
+    font-family: "Times New Roman",'PTSansRegular',Arial, Helvetica, sans-serif;  }
 
 .jumbotron {
     margin: 0px;
@@ -36,8 +33,7 @@ body {
     margin-right: 20px;
     margin-bottom: 20px;  }
 	
-/*Video*/	
-
+/*Video*/
 .exp {
     position: relative;
     margin-top: 20px;
@@ -90,8 +86,6 @@ iframe {
 
 /*Culture, places,things*/
 
-
-
 .subhead h2 {
     font-family: sans-serif, "Times New Roman";
     font-weight: bold;
@@ -122,14 +116,10 @@ p {
     font-size: 16px;
     font-weight: normal;
     font-color: #2f2f2f;
+    line-height: 130%
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: "Open Sans", sans-serif, "Times New Roman";
-
-}
-
-
-
+    font-family: "Times New Roman", sans-serif; }
 
 
 
@@ -152,7 +142,7 @@ header {
     margin-top: 85px;}
 
 .navbar {
-    font-family: 'Shadows Into Light Two', sans-serif;
+    font-family: 'Shadows Into Light Two', "Times New ROman", sans-serif;
     padding-left: 30px; }
 
 /*font-variant: small-caps;*/
@@ -220,57 +210,20 @@ header {
     border: none;}
 
 /*drop*/
-.navbar-nav>li>.dropdown-menu {
-    margin-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-dropdowns.less:36
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
+    width: 100%;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
+    background-color: rgba(255, 98, 117, 0.86);  }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;}
 
 /*Footer__________________________________________________________________*/
 
@@ -404,3 +357,34 @@ dropdowns.less:36
 }
 .footer-bottom p.pull-left {
     padding-top: 6px;}
+
+
+/*Caroussel*/
+
+#NepCul .carousel-inner, #NepPlace .carousel-inner{ height: 200px; width: 350px; overflow: hidden; }
+
+#NepCul .carousel,  #NepPlace .carousel {
+    position: relative;
+    width: 350px;
+    height: 200px;  }
+
+/*Tooltip*/
+
+.modal {
+    background-color: rgba(77, 208, 225, 0.33);}
+
+.modal-content {
+    background-color: #d8a8c7;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%; }
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;}

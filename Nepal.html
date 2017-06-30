@@ -20,7 +20,7 @@
         <!-- Custom styles for this template -->
         <link href="css/jumbotron.css" rel="stylesheet">
 
-        <link href="Destination.css" rel="stylesheet">
+        <link href="FINALVF.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows Into Light Two" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -35,31 +35,42 @@
     </head>
     <body>
 
-        <header class="page-header">
-            <div class="header inner">
-                <nav class="navbar">
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <img src="pictures/logo.jpg" alt="Travel" class="img-circle pull-left">
-                        <ul class="nav navbar-nav navbar-right masthead-nav">
-                            <li><a href="#"> Home</a></li>
-                            <li><a href="#"> About Us</a></li>
-                            <li><a href="#"> XXX</a></li>
-                            <li><a href="#"> Contact</a></li>
-                        </ul>
-                        <h1 id="title">From Nepal to France</h1>
-                    </div>
+    <header class="page-header">
+        <div class="header inner">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <img src="pictures/logo.jpg" alt="Travel" class="img-circle pull-left">
+                    <ul class="nav navbar-nav navbar-right masthead-nav">
+                        <li><a href="travefirst.html"> Home</a></li>
+                        <li><a href="AboutUs.html"> About Us</a></li>
+                        <li> <a id="myBtn" data-toggle="tooltip" type="button"> Contact</a></li>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Want to contact us ?</h3>
+                                <p>Send us an email at : <span class="glyphicon glyphicon-envelope"></span><a href="mailto:dp15@hood.edu"> dp15@hood.edu</a> or <span class="glyphicon glyphicon-envelope"></span><a href="mailto:cr12@hood.edu"> cr@hood.edu</a></p>
+                            </div>
+                        </div>
+                    </ul>
+                    <h1 id="title">From Nepal to France</h1>
+                </div>
 
-                </nav>
-            </div>
-            <div class="container-fluid tabStrip">
-                <ul class="nav nav-tabs text-center">
-                    <li class="col-sm-3 "><a href="travefirst.html"><i class="fa fa-home col-sm-12"></i><span class="col-sm-12">Home</span></a></li>
-                    <li class="col-sm-3 active"><a href="#"><i class="fa fa-ship  col-sm-12"></i><span class="col-sm-12">Destination</span></a></li>
-                    <li class="col-sm-3"><a href="GetReady.html"><i class="fa fa-map  col-sm-12"></i><span class="col-sm-12">Get Ready</span></a></li>
-                    <li class="col-sm-3"><a href="AboutUs.html"><i class="fa fa-anchor col-sm-12"></i><span class="col-sm-12">About Us</span></a></li>
-                </ul>
-            </div>
-        </header>
+            </nav>
+        </div>
+        <div class="container-fluid tabStrip">
+            <ul class="nav nav-tabs text-center">
+                <li class="col-sm-3 "><a href="travefirst.html"><i class="fa fa-home"></i><span class="col-sm-12">Home</span></a></li>
+                <li class="col-sm-3 active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ship"></i><span class="col-sm-12">Destination</span></a>
+                    <ul class="dropdown-menu">
+                        <li> <a  href="Nepal.html">Nepal</a></li>
+                        <li> <a href="France.html">France</a></li>
+                    </ul>
+                </li>
+                <li class="col-sm-3"><a href="GetReady.html"><i class="fa fa-map"></i><span class="col-sm-12">Get Ready</span></a></li>
+                <li class="col-sm-3"><a href="AboutUs.html"><i class="fa fa-anchor"></i><span class="col-sm-12">About Us</span></a></li>
+            </ul>
+        </div>
+    </header>
 
 
         <div class="container">
@@ -75,30 +86,29 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="pictures/carousel0.jpg" alt="first">
+                        <img src="Npics/Ncarousel1.jpg" alt="first">
                         <div class="carousel-caption">
                             First Caption
                         </div>
                     </div>
                     <div class="item">
-                        <img src="pictures/carousel1.jpg" alt="second">
+                        <img src="Npics/Ncarousel2.jpg" alt="second">
                         <div class="carousel-caption">
                             Second Caption
                         </div>
                     </div>
                     <div class="item">
-                        <img src="pictures/carousel1.jpg" alt="third">
+                        <img src="Npics/Ncarousel3.jpg" alt="third">
                         <div class="carousel-caption">
                             Third Caption
                         </div>
                     </div>
                     <div class="item">
-                        <img src="pictures/carousel1.jpg" alt="fourth">
+                        <img src="Npics/Ncarousel4.jpg" alt="fourth">
                         <div class="carousel-caption">
                             Fourth Caption
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Controls -->
@@ -112,33 +122,13 @@
                 </a>
             </div>
         </div> <!-- end carousel container -->
-        <script>
-            $('#carousel-example-generic'). carousel ({
-                interval:3000,
-                cycle:true
-            })
-        </script>
-
-
-        <div class="exp">
-            <div class="container">
-                <div class="experience text-center">
-                    <h2>Experience <span> Nepal </span></h2>
-                    <div class="border-exp"></div>
-                    <div class="video">
-                        <iframe width="800" height="400" src="https://www.youtube.com/embed/0hgC0PFjxr8" frameborder="0" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <div class="text-center">
             <h1> NEPAL </h1>
         </div>
 
-        <!-- Example row of columns -->
+
         <div class="container subhead" id="NepCul">
             <h2> CULTURE <span> - "that represents love and affection"</span></h2>
             <div class="row">
@@ -156,40 +146,34 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npeople3.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npeople2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npeople1.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npeople4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
                             </div>
-
                         </div>
-
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
+
                     <h3>People</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>The population of Nepal comprises of about a 101 ethnic groups speaking over 92 languages. The distinction in caste and ethnicity is understood more easily with a view of customary layout of the population. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -206,25 +190,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlanguage3.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlanguage2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlanguage1.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlanguage4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -232,14 +216,9 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Language</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Though, there exist over 92 dialects, the language of unification is the national language, Nepali. Nepali is the official language of the state, spoken and understood by majority of the population. Multiple ethnic groups have their own mother tongues. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -250,46 +229,34 @@
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ndress1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ndress2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ndress4.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
-                                <div class="carousel-caption">
-                                    Fourth Caption
                                 </div>
                             </div>
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Dress</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal is the country with diversity of culture and tradition. The major national dress for men is Dhaka topi and Daura Surwal, and Guniyo Cholo for female. But you can see more beautiful cultural costums, and language according to the ethnic groups. </p>
                 </div>
             </div>
 
@@ -309,25 +276,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfestival1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfestival2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfestival3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfestival4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -335,14 +302,10 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Festival</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal is not only the land of mountains; it is also the land of festivals. There are more than 50 festivals celebrated in Nepal every year. Each ethnic group has their own festivals. However, dashain is regarded as the biggest festival in Nepal. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -359,25 +322,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfood1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfood2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfood3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nfood4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -385,14 +348,9 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Food</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Dal-bhat-tarkari is eaten throughout Nepal. Dal is a soup made of lentils and spices. This is served over boiled grain, usually rice, some vegetables and pickles. Though, Dhindo is a traditional food of Nepal, there are numerous other foods which people have in their every day life. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -409,25 +367,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ngeography1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ngeography2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ngeography3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ngeography4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -435,14 +393,10 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Geography</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal is located in South Asia between China in the north and India in the south, east and west. The country can be divided into three main geographical regions: Himalayan region, mid hill region and Terai region. </p>
                 </div>
             </div>
         </div>
@@ -467,40 +421,35 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nmountain1.jpg" alt="first">
                                 <div class="carousel-caption">
-                                    First Caption
+                                    Mount Everest
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nmountain2.jpg" alt="second">
                                 <div class="carousel-caption">
-                                    Second Caption
+                                    Annapurna
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nmountain3.jpg" alt="third">
                                 <div class="carousel-caption">
-                                    Third Caption
+                                    Kanchanjunga
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nmountain4.jpg" alt="fourth">
                                 <div class="carousel-caption">
-                                    Fourth Caption
+                                    Makalu
                                 </div>
                             </div>
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Mountains</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal has the highest mountain range in the world. Eight of the fourteen highest peak (above 8000sq km) of the world are located in the country. The highest mountain in the world, Mount Everest is also in Nepal. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -517,25 +466,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlake1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlake2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlake3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nlake4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -543,14 +492,10 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Lakes</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal is the second richest country in water resources. There are numerous lakes and tanks of glacial and tectonic origin in Nepal. Nepal is famous for its high altitude  fresh water lakes  of varying size. This is the highest lake of Nepal, Tilicho Lake stands at 4919m from mean sea level. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -567,25 +512,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nplace1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nplace2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nplace3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nplace4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -593,14 +538,10 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Historical Places</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>The structures of Kathmandu, Bhaktapur and Patan’s medieval Durbar Square are a magical place to watch traditional city life in Nepal.  The 1500-year-old Licchavi statues of Changu Narayan Temple rank it as a treasurehouse of Himalayan art. Similarly, the birth place of Buddha, Lumbini is one of the finest attractions for people in the Nepal. </p>
                 </div>
             </div>
 
@@ -620,25 +561,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npark1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npark2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npark3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Npark4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -646,14 +587,9 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>National Parks</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal serves as one of the best collection of wild life on the planet - From exotic Lophophorus to the elusive Royal Bengali Tiger, and from the endangered One-Horned Rhino to exotic Snow leopard. It has 9 national parks where you can find the largest collection of birds and butterflies in the world. Even in an small area of less than 147,181 sq. km, Nepal have a wide variety of wild floras and faunas that is incomparable with any other geographic Nation of the world. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -670,25 +606,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntemple1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntemple2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntemple3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntemple4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -696,14 +632,9 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Temples</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal’s Hindu temples are masterworks in oiled brick, stone and carved wood. Awe-inspiring statuary, incredibly ornate toranas (lintels) and erotic carvings still inspire the desired amount of wonder. </p>
                 </div>
 
                 <div class="col-md-4">
@@ -720,25 +651,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nstupa1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nstupa2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nstupa3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Nstupa4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -746,14 +677,9 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Stupas</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p>Nepal has a rich Buddhist culture and temples which were nurtured over a long time. There are said to be over 1,200 Buddhist temples in Nepal, some going back as far as 2,000 years. As well as in the Kathmandu Valley, monasteries can be found in many of the mountain districts that border onto Tibet to the north and India to the east. </p>
                 </div>
             </div>
         </div>
@@ -777,25 +703,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -803,11 +729,6 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Mountaineering & Trekking</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -827,25 +748,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="first">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek1.jpg" alt="first">
                                 <div class="carousel-caption">
                                     First Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="second">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek2.jpg" alt="second">
                                 <div class="carousel-caption">
                                     Second Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="third">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek3.jpg" alt="third">
                                 <div class="carousel-caption">
                                     Third Caption
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-thumbnail" src="pictures/img2.jpg" alt="fourth">
+                                <img class="img-responsive img-thumbnail" src="Npics/Ntrek4.jpg" alt="fourth">
                                 <div class="carousel-caption">
                                     Fourth Caption
                                 </div>
@@ -853,11 +774,6 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Skydiving & Bungee Jumping</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -903,11 +819,6 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Rafting & Kayaking</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -956,11 +867,7 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Zip Flying</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -1006,11 +913,6 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                     <h3>Jungle Discovery & Bird watching</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -1056,11 +958,7 @@
 
                         </div>
 
-                        <!-- Controls -->
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <h3>Shopping</h3>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -1069,87 +967,100 @@
         </div>
 
 
+    <div class="exp">
+        <div class="container">
+            <div class="experience text-center">
+                <h2>Experience <span> Nepal </span></h2>
+                <div class="video">
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/0hgC0PFjxr8" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
 
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<footer>
-    <div class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> TIME TO PACK </h3>
+                        <ul>
+                            <li> <a href="GetReady.html#bag1"> Backpack VS Suitcase </a> </li>
+                            <li> <a href="GetReady.html#bag2"> Must have List to pack </a> </li>
+                            <li> <a href="GetReady.html#bag3"> 10 Packing Hacks  </a> </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> PLACE TO GO </h3>
+                        <ul>
+                            <li> <a href="Nepal.html#NepPlace"> Mountains of Nepal </a> </li>
+                            <li> <a href="France.html#FraPlace"> Mountains of France </a> </li>
+                            <li> <a href="Nepal.html#NepPlace"> Lakes of Nepal </a> </li>
+                            <li> <a href="France.html#FraPlace"> Paris France </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> CULTURE </h3>
+                        <ul>
+                            <li> <a href=France.html#FraCul" alt="France"> People In France </a> </li>
+                            <li> <a href="Nepal.html#NepCul" alt="Nepal"> People In Nepal </a> </li>
+                            <li> <a href=France.html#FraCul" alt="France"> Language In France </a> </li>
+                            <li> <a href="Nepal.html#NepCul" alt="Nepal"> Dress In Nepal </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> THING TO DO </h3>
+                        <ul>
+                            <li> <a href=France.html#FraThings" alt="France"> Eating In France </a> </li>
+                            <li> <a href="Nepal.html#NepThings" alt="Nepal"> Skydiving In Nepal </a> </li>
+                            <li> <a href=France.html#FraThings" alt="France"> Wine tasting In France </a> </li>
+                            <li> <a href="Nepal.html#NepThings" alt="Nepal"> Rafting In Nepal </a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                        <h3> WANT MORE ? </h3>
+                        <ul>
+                            <li>
+                                <div class="input-append newsletter-box text-center">
+                                    <input type="text" class="full text-center" placeholder="Email ">
+                                    <button class="btn  bg-gray" type="button"> Subcribe <i class="fa fa-long-arrow-right"> </i></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                    </ul>
-                </div>
+                <!--/.row-->
             </div>
-            <!--/.row-->
+            <!--/.container-->
         </div>
-        <!--/.container-->
-    </div>
-    <!--/.footer-->
+        <!--/.footer-->
 
-    <div class="footer-bottom">
-        <div class="container">
-            <p class="pull-left"> Copyright © Footer 2014. All right reserved.
-                <a href="#" class="foot">[Validator check: This site is valid HTML5]</a></p></p>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="pull-left"> Copyright © Footer 2017. All right reserved.
+                    <a href="#" class="foot">[Validator check: This site is valid HTML5]</a></p></p>
+            </div>
         </div>
-    </div>
-    <!--/.footer-bottom-->
-</footer>
+        <!--/.footer-bottom-->
+    </footer>
 
-</body>
+    </body>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -1158,6 +1069,31 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";}
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";}
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";}}
+    </script>
+
+    <script>
+        $('#carousel-example-generic'). carousel ({
+            interval:3000,
+            cycle:true
+        })
+    </script>
 </html>
 
 

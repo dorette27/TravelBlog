@@ -1,4 +1,3 @@
-@import "http://wyrd.hood.edu/~echang/it280/extras/reset.css";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
@@ -7,7 +6,7 @@
 body {
     padding-top: 0px;
     padding-bottom: 0px;
-    font-family: 'PTSansRegular',Arial, Helvetica, sans-serif;  }
+    font-family: "Times New Roman",'PTSansRegular',Arial, Helvetica, sans-serif;  }
 
 .jumbotron {
     margin: 0px;
@@ -15,7 +14,7 @@ body {
     padding-left: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #00BCD4;}
+    color: red;}
 
 .btn-primary, .btn-default {
     color: #fff;
@@ -25,61 +24,47 @@ body {
 .btn-success {
     color: #fff;
     background-color: #67ae55;  }
+
+ul {list-style-type: none;}
 	
 /*Mainpage*/
+
+.pic1
+{width: 300px;
+height: 200px;}
+
 
 #carousel-example-generic {
     margin-bottom:10px;  }
 
+.container {
+    padding-bottom: 30px;
+}
+
+
+.cool {
+    width: 100%
+    border: none;
+}
+
 .img-rounded {
     float: left;
     margin-right: 20px;
-    margin-bottom: 20px;  }
+    margin-bottom: 10px;  }
 
-.exp {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom:30px;
-    top: 95%;
-    left:0;
-    right: 0;  }
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 140%;
+    font-color: #2f2f2f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", sans-serif; }
 
-.experience {
-    background: #fff;
-    padding: 30px;
-    margin-top:30px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3), 0 0 0 rgba(0,0,0,0.1) inset;  }
-
-.experience h2 {
-    color: #51a126;
-    background: #fff;
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin:0 0 15px 0;
-    font-family: inherit;
-    line-height: 1.1;  }
-
-.experience h2 span {
-    color: #f90  }
-
-.text-centre {
-    text-align:center;  }
-
-.video {
-    margin-top: 30px;  }
-
-iframe[Attributes Style] {
-    width: 100%;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;  }
-
-iframe {
-    border-style: inset;  }
+.sidebar {
+    padding: 1em;
+    background-color: lavenderblush;
+}
 
 * {
     box-sizing: border-box;  }
@@ -138,7 +123,7 @@ iframe {
 }
 
 .nep1:hover .overlay {
-    opacity: 0.3;
+    opacity: 0.9;
 }
 
 .text {
@@ -240,59 +225,24 @@ header {
     border: none;}
 
 /*drop*/
-.navbar-nav>li>.dropdown-menu {
-    margin-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-dropdowns.less:36
 .dropdown-menu {
     position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
+    width: 100%;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
+    background-color: rgba(255, 98, 117, 0.86);  }
 
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;}
 
 /*Footer__________________________________________________________________*/
+
+input, button, select, textarea {
+    color: black;  }
 
 .full {
     width: 100%;  }
@@ -424,3 +374,25 @@ dropdowns.less:36
 }
 .footer-bottom p.pull-left {
     padding-top: 6px;}
+
+
+/*Tooltip*/
+
+.modal {
+    background-color: rgba(77, 208, 225, 0.33);}
+
+.modal-content {
+    background-color: #d8a8c7;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%; }
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;}

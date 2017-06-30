@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
 
-    <link href="FINALaboutus.css" rel="stylesheet">
+    <link href="FINALVF.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shadows Into Light Two" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -33,13 +33,10 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
-
 
 <header class="page-header">
     <div class="header inner">
@@ -47,10 +44,16 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <img src="pictures/logo.jpg" alt="Travel" class="img-circle pull-left">
                 <ul class="nav navbar-nav navbar-right masthead-nav">
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#"> About Us</a></li>
-                    <li><a href="#"> XXX</a></li>
-                    <li><a href="#"> Contact</a></li>
+                    <li><a href="travefirst.html"> Home</a></li>
+                    <li><a href="AboutUs.html"> About Us</a></li>
+                    <li> <a id="myBtn" data-toggle="tooltip" type="button"> Contact</a></li>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>Want to contact us ?</h3>
+                            <p>Send us an email at : <span class="glyphicon glyphicon-envelope"></span><a href="mailto:dp15@hood.edu"> dp15@hood.edu</a> or <span class="glyphicon glyphicon-envelope"></span><a href="mailto:cr12@hood.edu"> cr@hood.edu</a></p>
+                        </div>
+                    </div>
                 </ul>
                 <h1 id="title">From Nepal to France</h1>
             </div>
@@ -59,25 +62,30 @@
     </div>
     <div class="container-fluid tabStrip">
         <ul class="nav nav-tabs text-center">
-            <li class="col-sm-3 "><a href="travefirst.html"><i class="fa fa-home col-sm-12"></i><span class="col-sm-12">Home</span></a></li>
-            <li class="col-sm-3 "><a href="#"><i class="fa fa-ship  col-sm-12"></i><span class="col-sm-12">Destination</span></a></li>
-            <li class="col-sm-3"><a href="GetReady.html"><i class="fa fa-map  col-sm-12"></i><span class="col-sm-12">Get Ready</span></a></li>
-            <li class="col-sm-3 active"><a href="AboutUs.html"><i class="fa fa-anchor col-sm-12"></i><span class="col-sm-12">About Us</span></a></li>
+            <li class="col-sm-3 "><a href="travefirst.html"><i class="fa fa-home"></i><span class="col-sm-12">Home</span></a></li>
+            <li class="col-sm-3"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ship"></i><span class="col-sm-12">Destination</span></a>
+                <ul class="dropdown-menu">
+                    <li> <a  href="Nepal.html">Nepal</a></li>
+                    <li> <a href="France.html">France</a></li>
+                </ul>
+            </li>
+            <li class="col-sm-3"><a href="GetReady.html"><i class="fa fa-map"></i><span class="col-sm-12">Get Ready</span></a></li>
+            <li class="col-sm-3 active"><a href="AboutUs.html"><i class="fa fa-anchor"></i><span class="col-sm-12">About Us</span></a></li>
         </ul>
     </div>
 </header>
 
 
 <div class="container-fluid aboutus">
-    <h2>Want to know more about ?</h2>
+    <h2>Want to know more about us?</h2>
     <div class="row">
-        <div class="col-sm-5 dorette" style="background-color:lavender;">
+        <div class="col-sm-5 dorette">
             <h3>Dorette Pouchet</h3>
         <div class="row">
             <div class="col-sm-3 pic">
-                <img src="pictures/dp1.jpg" alt="Dorette YellowStone" >
+                <img src="pictures/dp3.jpg" alt="Dorette YellowStone" >
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <li><strong>Age:</strong> 24</li>
                 <li><strong>Country of Birth:</strong> France</li>
             <li><strong>Language:</strong> French, English</li>
@@ -87,48 +95,53 @@
             <div class="col-sm-3 pic">
                 <img src="pictures/dp2.jpg" alt="Dorette YellowStone" >
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <li><strong>Favorite destination:</strong> YellowStone</li>
-                <li><strong>3 Destinations to visit next:</strong> France</li>
+                <li><strong>3 Destinations to visit next:</strong> Laos, Vietnam, Indonesia</li>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3 pic">
-                <img src="pictures/dp3.jpg" alt="Dorette YellowStone" >
+                <img src="pictures/dp4.jpg" alt="Dorette YellowStone" >
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <li><strong>Favorite food:</strong> French & Asian food !</li>
-                <li><strong>Studied:</strong> Accounting, Management, Information Technology</li>
+                <li><strong>Studied:</strong> Accounting, Information Technology</li>
             </div>
         </div>
         </div>
 
-        <div class="col-sm-offset-5 chahana" style="background-color:lavenderblush;">
-           <h3>Chahana</h3>
+        <div class="col-sm-5 chahana">
+           <h3>Chahana Regmi</h3>
             <div class="row">
             <div class="col-sm-3 pic">
-                <img src="pictures/dp1.jpg" alt="Dorette YellowStone" >
+                <img src="pictures/cr1.jpg" alt="Dorette YellowStone" >
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <li><strong>Age:</strong> 25</li>
                 <li><strong>Country of Birth:</strong> Nepal</li>
                 <li><strong>Language:</strong> Nepalese, English</li>
             </div>
-
-            <div class="col-sm-3 pic">
-                <img src="pictures/dp2.jpg" alt="Dorette YellowStone" >
-            </div>
-            <div class="col-sm-3">
-                <li><strong>Favorite destination:</strong> YellowStone</li>
-                <li><strong>3 Destinations to visit next:</strong> France</li>
             </div>
 
+            <div class="row">
             <div class="col-sm-3 pic">
-                <img src="pictures/dp3.jpg" alt="Dorette YellowStone" >
+                <img src="pictures/cr2.jpg" alt="Dorette YellowStone" >
             </div>
-            <div class="col-sm-3">
-                <li><strong>Favorite food:</strong> French & Asian food !</li>
-                <li><strong>Studied:</strong> Accounting, Management, Information Technology</li>
+            <div class="col-sm-6">
+                <li><strong>Favorite destination:</strong> Las Vegas </li>
+                <li><strong>3 Destinations to visit next:</strong> Nepal's himalayan region, Europe, Florida </li>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm-3 pic">
+                <img src="pictures/cr4.jpg" alt="Dorette YellowStone" >
+            </div>
+            <div class="col-sm-6">
+                <li><strong>Favorite food:</strong> Authentic Nepali & Asian food!</li>
+                <li><strong>Studied:</strong> Management, Information Technology</li>
+            </div>
             </div>
             </div>
         </div>
@@ -137,54 +150,55 @@
 
 
 
-
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <footer>
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> TIME TO PACK </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="GetReady.html#bag1"> Backpack VS Suitcase </a> </li>
+                        <li> <a href="GetReady.html#bag2"> Must have List to pack </a> </li>
+                        <li> <a href="GetReady.html#bag3"> 10 Packing Hacks  </a> </li>
+
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> PLACE TO GO </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="Nepal.html#NepPlace"> Mountains of Nepal </a> </li>
+                        <li> <a href="France.html#FraPlace"> Mountains of France </a> </li>
+                        <li> <a href="Nepal.html#NepPlace"> Lakes of Nepal </a> </li>
+                        <li> <a href="France.html#FraPlace"> Paris France </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> CULTURE </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href=France.html#FraCul" alt="France"> People In France </a> </li>
+                        <li> <a href="Nepal.html#NepCul" alt="Nepal"> People In Nepal </a> </li>
+                        <li> <a href=France.html#FraCul" alt="France"> Language In France </a> </li>
+                        <li> <a href="Nepal.html#NepCul" alt="Nepal"> Dress In Nepal </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> THING TO DO </h3>
                     <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href=France.html#FraThings" alt="France"> Eating In France </a> </li>
+                        <li> <a href="Nepal.html#NepThings" alt="Nepal"> Skydiving In Nepal </a> </li>
+                        <li> <a href=France.html#FraThings" alt="France"> Wine tasting In France </a> </li>
+                        <li> <a href="Nepal.html#NepThings" alt="Nepal"> Rafting In Nepal </a> </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Lorem Ipsum </h3>
+                    <h3> WANT MORE ? </h3>
                     <ul>
                         <li>
                             <div class="input-append newsletter-box text-center">
                                 <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
+                                <button class="btn  bg-gray" type="button"> Subcribe <i class="fa fa-long-arrow-right"> </i> </button>
                             </div>
                         </li>
                     </ul>
@@ -205,8 +219,8 @@
 
     <div class="footer-bottom">
         <div class="container">
-            <p> Copyright © Footer 2014. All right reserved.
-                <a href="#" class="foot">[Validator check: This site is valid HTML5]</a></p></p>
+            <p class="pull-left"> Copyright © Footer 2017. All right reserved.
+                <a href="#" class="foot">[Validator check: This site is valid HTML5]</a></p>
         </div>
     </div>
     <!--/.footer-bottom-->
@@ -221,8 +235,25 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";}
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";}
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";}}
+</script>
+
 </html>
-
-
 
 

@@ -1,5 +1,4 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import "http://wyrd.hood.edu/~echang/it280/extras/reset.css";
 
 /*General*/
 
@@ -83,6 +82,20 @@ iframe {
 
 
 /*video end*/
+/*drop*/
+.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(255, 98, 117, 0.86);  }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;}
 
 
 /*Header_______________________________________________________________________*/
@@ -181,6 +194,10 @@ header {
     width: 100%;
     clear: both;
     display: block;  }
+
+
+input, button, select, textarea {
+    color: black;  }
 
 .footer {
     background-color: #4DD0E1 ;

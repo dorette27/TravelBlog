@@ -1,12 +1,11 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import "http://wyrd.hood.edu/~echang/it280/extras/reset.css";
 
 /*General*/
 
 body {
     padding-top: 0px;
     padding-bottom: 0px;
-    font-family: 'PTSansRegular',Arial, Helvetica, sans-serif;  }
+    font-family: "Times New Roman",'PTSansRegular',Arial, Helvetica, sans-serif;  }
 
 .jumbotron {
     margin: 0px;
@@ -28,10 +27,6 @@ body {
 .text-centre {
     text-align:center;  }
 
-/*Main Page*/
-
-#carousel-example-generic {
-    margin-bottom:10px;  }
 
 /*video*/
 .exp {
@@ -88,17 +83,11 @@ iframe {
 /*Culture, places,things*/
 
 .subhead h2 {
-    font-family: sans-serif, "Times New Roman";
+    font-family: "Times New Roman", sans-serif;
     text-align:center;
     padding: 1em;
     background-color: bisque;
 }
-
-
-
-
-
-
 
 
 /*Header_______________________________________________________________________*/
@@ -186,6 +175,23 @@ header {
     background-color: transparent;
     cursor: default;
     border: none;}
+
+/*drop*/
+.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(255, 98, 117, 0.86);  }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;}
+
+
 
 /*Footer______________________________________________________________________*/
 
@@ -321,6 +327,9 @@ header {
     padding-top: 6px;}
 
 
+input, button, select, textarea {
+    color: black;  }
+
 /*Get Ready Page*/
 
 hr{margin: 3em;}
@@ -449,13 +458,12 @@ hr{margin: 3em;}
     text-decoration: none;
     background: rgba(230, 138, 221, 0.92); }
 
-.top {margin-top:20px;}
+/*.top {margin-top:20px;}*/
 
-.space {margin:10px;}
-
+/*.space {margin:10px;}*/
 
 img {
-    width: auto\9;
+    width: auto;
     height: auto;
     max-width: 100%;
     vertical-align: middle;  }
@@ -470,7 +478,6 @@ img {
 
 .pack h3 {
     font-family: 'Shadows Into Light Two', sans-serif;  }
-
 
 /*table*/
 
@@ -513,18 +520,67 @@ img {
 
 /*About us */
 
-.aboutus {padding: 0;
-margin: 0;}
+.aboutus {
+    margin-bottom: 5%;
+    font-family:"Times New Roman", sans-serif;}
 
 .aboutus li {
     list-style-type: none;
     padding-top: 1em;
-    margin-top: 15%;
-}
+    margin-top: 5%;  }
+
+.aboutus li strong {
+    list-style-type: none;
+    padding-top: 1em;
+    margin-top: 5%;
+    font-variant: small-caps;}
+
+.aboutus h2{
+    text-align: center;
+    font-family:'Shadows Into Light Two', "Times New Roman", sans-serif;
+    margin-bottom: 1em;}
 
 .pic{
     width: 50%;
     height: 40%;  }
 
-.dorette{margin-left: 2em;
-    margin-right: 2em;}
+.dorette{margin-left: 5%;
+    margin-right: 2em;
+    border: solid lightpink;
+    background-color: rgba(77, 208, 225, 0.38);  }
+
+.chahana {margin-left: 5%;
+    margin-right: 2em;
+    border: solid #4DD0E1;
+    background-color: rgba(255, 182, 193, 0.57);  }
+
+.dorette h3{
+    text-align: center;
+    font-family:'Shadows Into Light Two', "Times New Roman", sans-serif;
+    background-color: rgba(255, 182, 193, 0.57);  }
+
+.chahana h3{
+    text-align: center;
+    font-family:'Shadows Into Light Two', "Times New Roman", sans-serif;
+    background-color: rgba(77, 208, 225, 0.38);  }
+
+/*Tooltip*/
+
+.modal {
+    background-color: rgba(77, 208, 225, 0.33);}
+
+.modal-content {
+    background-color: #d8a8c7;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%; }
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;}
